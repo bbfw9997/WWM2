@@ -1,0 +1,150 @@
+Edit signals and slots - button.
+-connect(sender(input), SIGNAL(valueChanged), receiver, SLOT(setValue))
+
+-disconnect()
+
+
+#include <QMessageBox>
+-QMessageBox::about(this, "Title", "Text")
+aboutQt
+critical
+information
+question
+warning
+
+reply
+
+#include <QDebug>
+-qdebug
+
+-Add Layout
+first drag and drop any widget.
+rightClick >> lay out >> lay out ...
+size policy
+
+-Layout inside layout
+drag and drop a layout ;) 
+
+-horizontal/vertical spacer
+
+-Lay out horizontally in splitter. 
+
+-Edit Buddies. 
+
+-Edit Tab Order. 
+
+-open second dialog:
+#include <secdialog.h>
+SecDialog secDialog;
+secDialog.setModal(true); << Modal approach dekativiert das hintere main Fenster. 
+secDialog.exec();
+
+========= new SecDialog(this);
+hide ();  will hide MainWindow
+
+-QString
+
+
+-Image:
+Label
+1. code
+2. GUI
+
+
+#include <QPixmap>
+mainwindow.cpp
+QpixMap pix(path) \ > /
+ui-> id -> setPixmap(pix.scaled(100,100,Qt::KeepAspectRatio))
+
+int w = ui->label-pic-> width();
+=======
+
+GUI
+pixmap >> chooseFile
+stylesheet >> ... ?
+
+
+-statusbar
+ui->statusbar->showMessage(text, timeout in milliseconds 5000)
+
+- add widgets to statusbar 
+construvctcor : 
+ui -> statusbar -> addPermanentWidget(ui->label_3, 1)
+
+-Resource Collection Files (.qrc)
+Qt resource File >> name resource for instance
+folder resources >> resource.qrc 
+Add >> Add prefix (folder)... /img 
+Add Files >> images
+copy path and use it (right click)
+
+-QLineEdit as pw field (hide pw)
+property : echoMode >> password
+
+-HTML and stylesheets
+<font color= red> text </font>
+
+
+-QActionClass
+
+-QComboBox
+ui->comboBox->addItem(string);
+ui->comboBox->addItem(string);
+ui->comboBox->addItem(string);
+(dropdown)
+
+-Qstring::number(i) << converts int to string 
+
+-QlistWidget
+
+QlistWidgetItem *item = new QListWidgetItem(QIcon("Location"), "name");
+ui->listWidget->addItem(item);
+
+ui->listWidget->addItem("text");
+ui->listWidget->addItem("text");
+
+-QDir
+#include <QDir>
+QDir dir("C:/...");
+
+-QFile
+#include <QFile>
+#include <QTextStream>
+
+-QFileDialog
+
+-QTimer.
+#include <QTimer> >> mainwindow.h
+private QTimer *timer;
+public slots: 
+void myFunction();
+RightClick. 
+
+timer = new QTimer(this);
+connect(timer, SIGNAL(timeout()), this, SLOT(myFunction))
+timer -> start(2000)
+
+-QDateTime
+#include <QDateTime>
+QTime time = QTime::currentTime();
+
+-this->setCentralWidget(ui->textEdit)
+
+-QFontDialog. 
+#include <QFontDialog>
+#include <QFont>
+
+-QColorDialog
+#include <QColorDialog>
+#include <QColor>  
+
+
+
+
+
+
+
+
+
+
+

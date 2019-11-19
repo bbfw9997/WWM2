@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>backgroundimage_purple_black.jpg</file>
+        <file>background_liste_win.jpg</file>
+        <file>wwm_logo.png</file>
+        <file>fragen.txt</file>
+        <file>onHoverSound.mp3</file>
+    </qresource>
+    <qresource prefix="/txt"/>
+    <qresource prefix="/"/>
+</RCC>
